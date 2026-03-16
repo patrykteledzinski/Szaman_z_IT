@@ -110,9 +110,11 @@
                         <img src="img/img-3x2-03.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
                         <div class="tm-media-body">
                             <a href="#" class="tm-article-link">
-                                <h3 class="tm-article-title text-uppercase">Moi najwięksi mistrzowie, jeszcze nie mają strony</h3>
+                                <h3 class="tm-article-title text-uppercase">Moi najwięksi mistrzowie, jeszcze nie mają
+                                    strony</h3>
                             </a>
-                            <p>Mój bratanek Witold oraz córka Gabriela. <br>Jej cytat w wieku 4 lat : <br>"Po to jestem cwaniaczkiem by robić to co mam w głowie, a nie to co powiedzą mi inni".</p>
+                            <p>Mój bratanek Witold oraz córka Gabriela. <br>Jej cytat w wieku 4 lat : <br>"Po to jestem
+                                cwaniaczkiem by robić to co mam w głowie, a nie to co powiedzą mi inni".</p>
                         </div>
                     </article>
                     <article class="col-lg-6 tm-media">
@@ -127,9 +129,52 @@
                 </div>
             </section>
 
-            <footer>
-                Copyright &copy; 2026 Szaman z IT
-            </footer>
+            <!-- Footer / Scroll Section -->
+            <section
+                style="background:#fff; padding:40px 20px; text-align:center; font-family:'Open Sans', sans-serif;">
+                <div style="margin-bottom:20px;">
+                    <ul
+                        style="list-style:none; padding:0; margin:0 0 15px 0; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+                        <!-- Powrót na górę bieżącej strony -->
+                        <li><a href="#top" class="footer-link"
+                                style="color:#222; text-decoration:none; font-weight:600;">⬆️ Góra strony</a></li>
+
+                        <!-- Linki w zadanej kolejności -->
+                        <li><a href="index.html" class="footer-link"
+                                style="color:#222; text-decoration:none; font-weight:600;">O mnie</a></li>
+                        <li><a href="wspolpraca.html" class="footer-link"
+                                style="color:#222; text-decoration:none; font-weight:600;">Współpraca</a></li>
+                        <li><a href="cieniokochanie.html" class="footer-link"
+                                style="color:#222; text-decoration:none; font-weight:600;">CienioKochanie</a></li>
+                        <li><a href="contact.html" class="footer-link"
+                                style="color:#222; text-decoration:none; font-weight:600;">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Yin-Yang spinning -->
+                <div style="font-size:50px; margin-bottom:15px;">
+                    <span id="yinYang" style="display:inline-block; transform-origin:center;">☯️</span>
+                </div>
+
+                <p style="color:#555; font-size:14px; margin-top:0;">&copy; 2026 Szaman z IT – Patryk Teledziński</p>
+            </section>
+
+            <script>
+                // Smooth scroll tylko dla linku do #top
+                const topLink = document.querySelector('.footer-link[href="#top"]');
+                topLink.addEventListener('click', e => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+
+                // Yin-Yang rotation animation
+                const yinYang = document.getElementById('yinYang');
+                let angle = 0;
+                setInterval(() => {
+                    angle += 2; // degrees per frame
+                    yinYang.style.transform = `rotate(${angle}deg)`;
+                }, 30);
+            </script>
 
         </main>
     </div>
