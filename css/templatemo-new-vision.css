@@ -124,7 +124,7 @@ p {
 /* wersja mobilna - pokaz lewą część obrazka */
 @media (max-width: 568px) {
     .tm-services-bg {
-        background-position: left center;
+        background-position: right center;
         min-height: 50vh; /* minimalna wysokość, żeby było widać obraz */
         background-size: cover;
     }
