@@ -93,7 +93,7 @@ p {
     background-image: url(../img/new-vision-01.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    /* background-size: cover; */
     width: 100%;
     min-height: 70vh;
 }
@@ -118,7 +118,7 @@ p {
     background-image: url(../img/new-vision-03.jpg);
     background-repeat: no-repeat;
     background-position: center right;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .tm-contact-bg { 
