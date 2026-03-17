@@ -104,6 +104,7 @@ p {
     .tm-main-bg {
         background-position: left center;
         min-height: 60vh;
+        background-size: cover;
     }
 }
 
@@ -119,6 +120,14 @@ p {
     background-repeat: no-repeat;
     background-position: center right;
     /* background-size: cover; */
+}
+/* wersja mobilna - pokaz lewą część obrazka */
+@media (max-width: 568px) {
+    .tm-services-bg {
+        background-position: left center;
+        min-height: 50vh; /* minimalna wysokość, żeby było widać obraz */
+        background-size: cover;
+    }
 }
 
 .tm-contact-bg { 
